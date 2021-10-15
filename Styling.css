@@ -1,0 +1,142 @@
+h1 {
+    color:blue;
+    text-align:center; 
+}
+
+/* div{
+    background-color: orange;
+    width: 200px;
+    height: 200px;
+    padding: 50px;
+    margin: 50px;
+    font-family: Arial, sans-serif,;
+    font-size: 28px;
+    font-weight:bold;
+    border: 15px solid green;
+} */
+
+table {
+    border: 3px solid purple;
+    border-collapse: collapse;
+
+}
+
+th, td{
+border: 3px solid purple;
+padding: 5px;
+}
+
+#foo {
+    color: green;
+}
+ 
+.baz {
+    color: brown;
+}
+
+/* Specificity (Order of Presedence)
+1. Inline styling
+2. Id
+3. Class
+4. Type */
+
+ul > li {
+    color: yellow;
+}
+
+a {
+    color:red;
+}
+
+a[href="https://facebook.com"] {
+    color: green;
+}
+
+button {
+    width: 200px;
+    height: 50px;
+    font-size: 24px;
+    background-color: purple;
+}
+
+/* A PSEUDO CLASS */
+button:hover {
+    background-color: blue;
+}
+
+/* RESPONSIVE DESIGN*/
+
+/* VIEW PORT
+MEDIA QUARIES
+FLEXBOX
+GRIDS */
+
+
+/* VIEW PORT */
+@media (min-width: 600px) {
+    body {
+        background-color: red;
+    }
+}
+
+@media (max-width:599px) {
+    body {
+        background-color: blueviolet;
+    }
+}
+
+/* FLEXBOX */
+
+#Container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#Container > div {
+    background-color: springgreen;
+    font-size: 20px;
+    margin: 20px;
+    padding: 20px;
+    width: 200px;
+}
+
+#grid {
+    background-color:darkred;
+    display:grid;
+    padding: 20px;
+    grid-column-gap: 3px;
+    grid-row-gap: 3px;
+    grid-template-columns: 140px 140px 140px;
+}
+
+.grid-item {
+    background-color:white;
+    font-size: 20px;
+    padding: 20px; 
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
