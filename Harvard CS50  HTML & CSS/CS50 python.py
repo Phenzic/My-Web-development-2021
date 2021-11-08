@@ -1,6 +1,6 @@
 # BASIC PRINT
 
-print ("Hello World");
+print ("Hello World")
 print ("My name is Phensic")
 Name = input("Name: ")
 print(f"Hello, {Name}")
@@ -11,7 +11,7 @@ num = int(input('Number: '))
 if num > 0:
     print("This is a positive number")
 else:
-    print("Number is not positive")
+    print("Number is Negative")
 
 
     
@@ -24,25 +24,23 @@ elif pref < 11 :
 else: 
     print('The number is 11 ')
     
-#  SEQUENCE
-# LISTS => A SEQUENCE OF MUTABLE VALUES 
-name = "Mayor"
+# SEQUENCES
+
+
+# A LISTS => SEQUENCE OF MUTABLE VALUES
+name =['Mayor', 'Henry','Ron', 'Hermione', 'Ginny' ] 
+
+name.append('Draco')
+name.sort()
+
+print (name)
 print(name[1])
 
-
-
-# TUPLE =>  SEQUENCE OF IMMUTABLE VALUES
+# A TUPPLE => SEQUENCE IMMUTABLE LIST
 coordinate = (10.0, 20.0)
 
-Name = ["Mayor", "Henry", "Ron", " Hermoine", "Joycee",]
-Name.append("Draco")
-print(Name[0])
-Name.sort()
-print(Name)
 
-
-
-# SET => A COLLECTION OF UNIWUE VALUES
+# A SET => A COLLECTION OF UNIQUE VALUES
 
 s = set()
 
@@ -50,37 +48,41 @@ s.add(1)
 s.add(2)
 s.add(3)
 s.add(4)
-s.add(2) # ONLY RETURNS UNIQUE VALUES 
+s.add(3)      #NO ELEMENT APPERS TWICE IN THE SET
+              # ONLY RETURNS UNIQUE VALUES 
 
-s.remove(3)
+s.remove(2)
 print(s)
-print(f"The set has {len(s)} elements.")
 
-# DICTIONARY => A COLLECTION OF KEY-VALUE PAIR
+print (f"This set has {len(s)} elements ")
 
-houses ={"Harry": "Gryffindor", "Draco": "Slytherin"}
-houses["Hermoine"] = "Gryffindor"
+# A DICTIONARY => A COLLECTION OF KEY-VALUE PAIR (MUTABLE)
+houses = {"Harry": "Griffindor", "Draco": "Slytherin" }
+
+print(houses["Harry"])
+
+houses["Hermoine"]= "Gryffindor"
+
 print(houses["Hermoine"])
 
 
 
 
-# LOOPS
+# LOOPS 
 for i in [0, 1, 2, 3, 4, 5]:
     print(i)
 
-for i in range(20):
+for i in range(10):
     print(i)
 
-Names = ["Rayn", "Raynold", "Blue Shirt Guy", "Tom", "Welling"]
-
-for inputs in Names:
-    print(inputs)
+Names = ["Rayn", "Raynold", "Blue Shirt Guy", "Tom", "Welling"] 
+for name in Names:
+    print (name)
 
 person = "Salvatore"
 for chars in person:
-    print(chars)
 
+    print(chars)
 
 
 # FUNCTIONS
@@ -188,7 +190,6 @@ try:
 except ValueError:
     print("Error: Invalid input.")
     sys.exit(1)
-
 
 
 
